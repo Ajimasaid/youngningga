@@ -1,0 +1,23 @@
+list = [33,27,41,89,54]
+
+angkaterbesar=list[0]
+angkaterkecil=list[0]
+genap=[]
+ganjil=[]
+
+for i in range (0,len(list)):
+    if list[i] > angkaterbesar:
+        angkaterbesar = list [i]
+    if list[i] < angkaterkecil:
+        angkaterkecil = list[i]
+
+for i in list :
+    if i%2 == 0:
+        genap.append(i)
+    else:
+        ganjil.append(i)
+
+print 'Max:', angkaterbesar
+print 'Min:', angkaterkecil
+print 'AngkaGanjil = ',ganjil
+print 'AngkaGenap =',genap
